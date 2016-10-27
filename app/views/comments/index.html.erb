@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p><strong>Title:</strong> 
+<%= @post.title %>
+<br><br>
+<strong>Body:</strong>
+<%= @post.body %></p>
+
+<h2>Comments</h2>
+<div class="container">
+	<%= render @comments, comments: @comments %>
+</div>
+<br>
+<h3>New Comment</h3>
+<%= render 'form', comment: @post.comments.create %>

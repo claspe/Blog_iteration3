@@ -1,0 +1,10 @@
+<%= form_for([@post,@comments.new], remote: true) do |f| %>  
+<div class="field">
+    <%= f.label "New Comment" %>
+    <%= f.text_area :body %>
+</div>
+
+<div class="actions">
+    <%= f.submit %>
+</div>
+<% end %>

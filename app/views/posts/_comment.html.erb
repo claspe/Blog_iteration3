@@ -1,0 +1,10 @@
+<p>
+   <b>
+   Posted
+   <%= distance_of_time_in_words(Time.now.to_i - comment.updated_at.to_i) %> 
+   ago
+  </b>
+</p> 
+<p>
+  <%= comment.body %>
+</p>
